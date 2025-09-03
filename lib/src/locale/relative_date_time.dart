@@ -1746,6 +1746,57 @@ class CsRelativeDateTime extends RelativeDateTime {
   String wordSeparator() => ' ';
 }
 
+// Vietnamese translations
+class ViRelativeDateTime implements RelativeDateTime {
+  @override
+  String prefixAgo() => '';
+
+  @override
+  String prefixFromNow() => 'sau';
+
+  @override
+  String suffixAgo() => 'trước';
+
+  @override
+  String suffixFromNow() => '';
+
+  @override
+  String lessThanOneMinute(int seconds) => 'vài giây';
+
+  @override
+  String aboutAMinute(int minutes) => 'một phút';
+
+  @override
+  String minutes(int minutes) => '$minutes phút';
+
+  @override
+  String aboutAnHour(int minutes) => 'một giờ';
+
+  @override
+  String hours(int hours) => '$hours giờ';
+
+  @override
+  String aDay(int hours) => 'một ngày';
+
+  @override
+  String days(int days) => '$days ngày';
+
+  @override
+  String aboutAMonth(int days) => 'một tháng';
+
+  @override
+  String months(int months) => '$months tháng';
+
+  @override
+  String aboutAYear(int year) => 'một năm';
+
+  @override
+  String years(int years) => '$years năm';
+
+  @override
+  String wordSeparator() => ' ';
+}
+
 String _replaceToLocaleNum(String input, String locale) {
   var localeNumbers = {
     'en': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'],

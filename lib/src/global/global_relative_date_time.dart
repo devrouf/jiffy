@@ -30,6 +30,7 @@ Map<String, RelativeDateTime> _relativeDateTime = {
   'th': ThRelativeDateTime(),
   'sk': SkRelativeDateTime(),
   'cs': CsRelativeDateTime(),
+  'vi': ViRelativeDateTime(),
 };
 
 RelativeDateTime? _defaultRelativeDateTime;
